@@ -1,0 +1,34 @@
+@import "./rose-pine.css";
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'BigBlueTermPlus Nerd Font Mono';
+}
+window#waybar {
+    background: @base;
+    color: @text;
+    font-size: 14px;
+}
+
+#battery,
+#clock,
+#network,
+#wireplumber {
+	padding: 0 10px 0 10px;
+}
+
+#workspaces {
+	background: @base;
+	color: @love;
+}
+
+#workspaces button {
+	color: @text;
+}
+
+#workspaces button.active {
+	background: @overlay;
+}
